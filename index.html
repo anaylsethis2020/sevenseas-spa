@@ -2,227 +2,207 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Seven Seas Spa - A relaxing oasis for your well-being" />
-  <title>Seven Seas Spa</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-  <style>
-    .navbar-custom {
-      color: #3B2F2F;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <title>Seven Seas Spa</title>
+    <style>
+        /* Apply the Handlee font to all headings */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Handlee', cursive;
+        }
 
-    .navbar-custom .nav-link {
-      color: #3B2F2F;
-    }
+        .navbar-custom .nav-link {
+            color: #3B2F2F;
+        }
 
-    .navbar-custom .nav-link.active {
-      font-weight: bold;
-    }
+        .navbar-custom .nav-link.active {
+            font-weight: bold;
+        }
 
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+        }
 
-    .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero.png') no-repeat center center;
-      background-size: cover;
-      background-position: center;
-      background-attachment: scroll; /* Changed from fixed for better responsiveness */
-      color: #FFEBD4;
-      padding: 100px 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero.png') no-repeat center center;
+            background-size: cover;
+            color: #FFEBD4;
+            padding: 8rem 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-    .hero-section h1 {
-      font-family: 'Handlee', cursive;
-    }
+        .card-img-top {
+            object-fit: cover;
+        }
 
-    .hero-section p {
-      font-size: 1.25rem;
-      margin-bottom: 20px;
-    }
+        .footer {
+            margin-top: auto;
+            background-color: #6F4E37;
+            color: #FFEBD4;
+        }
 
-    .btn {
-      color: #3B2F2F;
-    }
-  </style>
+        .footer i.bi {
+            color: #FFEBD4;
+        }
+    </style>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="z-index: 1030;">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/images/logo.png" alt="Seven Seas Spa Logo" width="30" height="30" class="me-2" />
-        Seven Seas Spa
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero-section text-center text-white d-flex align-items-center" style="background-image: url('assets/images/hero.png'); background-size: cover; background-position: center; height: 100vh;">
-    <div class="container">
-      <h1>Welcome to Seven Seas Spa</h1>
-      <p>We are dedicated to improving your overall wellbeing.</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
-    </div>
-  </section>
-
-  <main class="container my-5">
-    <!-- More content will go here -->
-  </main>
-
-  <section id="services" class="text-center py-5">
-    <div class="container">
-      <h2 class="mb-4">Our Services</h2>
-      <img src="assets/images/services-overview.jpg" alt="Overview of Our Services" class="img-fluid mb-5">
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/yoga.jpg" class="card-img-top" alt="Yoga Therapy">
-            <div class="card-body">
-              <h5 class="card-title">Yoga Therapy</h5>
-              <p class="card-text">Enhance your flexibility and inner peace with our expert-led yoga sessions.</p>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" width="30" height="30">
+                Seven Seas Spa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-        <!-- Card 2 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/wellness.jpg" class="card-img-top" alt="Wellness Coaching">
-            <div class="card-body">
-              <h5 class="card-title">Wellness Coaching</h5>
-              <p class="card-text">Achieve your health goals with personalized wellness coaching programs.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/nutrition.jpg" class="card-img-top" alt="Nutritional Advice">
-            <div class="card-body">
-              <h5 class="card-title">Nutritional Advice</h5>
-              <p class="card-text">Discover the benefits of a balanced diet with our expert nutritional advice.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/mental.jpg" class="card-img-top" alt="Mental Health Support">
-            <div class="card-body">
-              <h5 class="card-title">Mental Health Support</h5>
-              <p class="card-text">Prioritize your mental well-being with our compassionate support services.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="testimonials" class="text-center py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">What Our Clients Say</h2>
-      <div class="row">
-        <!-- Testimonial 1 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/emil.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Emil" style="width: 100px; height: 100px; object-fit: cover;">
-            <div class="card-body">
-              <h5 class="card-title">Emil Johnson</h5>
-              <p class="card-text">"The yoga sessions have transformed my life. I feel more relaxed and energized every day!"</p>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <header class="hero text-center" id="mainContent">
+        <div class="container">
+            <h1 class="display-4">
+                <span class="hero-part-1">Welcome to</span>
+                <span class="hero-part-2">Seven Seas Spa</span>
+            </h1>
+            <p class="lead">We are dedicated to improving your overall wellbeing.</p>
+            <a href="#contact" class="btn btn-light btn-lg" role="button" tabindex="0">Contact Us</a>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/jane.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Jane" style="width: 100px; height: 100px; object-fit: cover;">
-            <div class="card-body">
-              <h5 class="card-title">Jane Doe</h5>
-              <p class="card-text">"The wellness coaching helped me achieve my health goals. Highly recommend their services!"</p>
-            </div>
-          </div>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/joe.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Joe" style="width: 100px; height: 100px; object-fit: cover;">
-            <div class="card-body">
-              <h5 class="card-title">Joe Smith</h5>
-              <p class="card-text">"The mental health support team is amazing. They truly care about their clients."</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="contact" class="text-center py-5">
-    <div class="container">
-      <h2 class="mb-4">Contact Us</h2>
-      <form class="text-start mx-auto" style="max-width: 600px;">
-        <!-- Full Name -->
-        <div class="mb-3">
-          <label for="fullName" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
-        </div>
-        <!-- Email Address -->
-        <div class="mb-3">
-          <label for="emailAddress" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address" required>
-        </div>
-        <!-- Subject -->
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
-        </div>
-        <!-- Message -->
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Write your message here" required></textarea>
-        </div>
-        <!-- Submit Button -->
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
+    <!-- Main Section -->
+    <main class="container my-5">
+        <!-- Services Section -->
+        <section class="my-5">
+            <h2 class="display-5">Our Services</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card shadow">
+                        <img src="assets/images/yoga.jpg" alt="Yoga Therapy" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga Therapy</h5>
+                            <p class="card-text">Enhance your flexibility and inner peace with our expert-led yoga sessions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card shadow">
+                        <img src="assets/images/wellness.jpg" alt="Wellness Coaching" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Wellness Coaching</h5>
+                            <p class="card-text">Achieve your health goals with personalized wellness coaching programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card shadow">
+                        <img src="assets/images/nutrition.jpg" alt="Nutritional Advice" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Nutritional Advice</h5>
+                            <p class="card-text">Discover the benefits of a balanced diet with our expert nutritional advice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card shadow">
+                        <img src="assets/images/mental.jpg" alt="Mental Health Support" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mental Health Support</h5>
+                            <p class="card-text">Prioritize your mental well-being with our compassionate support services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <p class="mb-0">&copy; 2025 Seven Seas Spa. All rights reserved.</p>
-  </footer>
+        <!-- Testimonials Section -->
+        <section class="my-5">
+            <h2 class="display-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/images/emil.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Emil" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Emil Johnson</h5>
+                            <p class="card-text">"The yoga sessions have transformed my life. I feel more relaxed and energized every day!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/images/jane.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Jane" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Doe</h5>
+                            <p class="card-text">"The wellness coaching helped me achieve my health goals. Highly recommend their services!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/images/joe.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Joe" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Joe Smith</h5>
+                            <p class="card-text">"The mental health support team is amazing. They truly care about their clients."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                    <p>© 2022 Seven Seas Spa</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.facebook.com/Code.InstituteIRL/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/codeinstitute" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Twitter" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/codeinstitute/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Instagram" class="me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/code-institute/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Connect with us on LinkedIn" class="me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
