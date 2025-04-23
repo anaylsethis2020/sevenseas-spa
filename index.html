@@ -31,7 +31,8 @@
     .hero-section {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero.png') no-repeat center center;
       background-size: cover;
-      background-attachment: fixed;
+      background-position: center;
+      background-attachment: scroll; /* Changed from fixed for better responsiveness */
       color: #FFEBD4;
       padding: 100px 0;
       height: 100vh;
@@ -96,6 +97,13 @@
   <main class="container my-5">
     <!-- More content will go here -->
   </main>
+
+  <section id="services" class="text-center py-5">
+    <div class="container">
+      <h2 class="mb-4">Our Services</h2>
+      <img src="assets/images/services-overview.jpg" alt="Overview of Our Services" class="img-fluid">
+    </div>
+  </section>
 
   <footer class="bg-dark text-white text-center py-3 mt-auto">
     <p class="mb-0">&copy; 2025 Seven Seas Spa. All rights reserved.</p>
