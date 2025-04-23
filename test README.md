@@ -30,17 +30,17 @@ This responsive website is designed for a modern spa that offers holistic wellne
 
 ## UX Goals (User Stories)
 
-- As a user, I want to easily navigate the website.
-- As a user, I want to see what services are offered.
-- As a user, I want to read testimonials from real clients.
-- As a user, I want to contact the spa easily.
-- As a user, I want a clean, mobile-friendly experience.
+- As a user, I want to easily navigate the website
+- As a user, I want to see what services are offered
+- As a user, I want to read testimonials from real clients
+- As a user, I want to contact the spa easily
+- As a user, I want a clean, mobile-friendly experience
 
 ## Testing
 
-- ✅ Manual testing across devices (Chrome, Safari, mobile).
-- ✅ Code validated using W3C Validator and CSS Validator.
-- ✅ All links and forms tested and functional.
+- ✅ Manual testing across devices (Chrome, Safari, mobile)
+- ✅ Code validated using W3C Validator and CSS Validator
+- ✅ All links and forms tested and functional
 
 ## Deployment
 
@@ -49,11 +49,12 @@ This responsive website is designed for a modern spa that offers holistic wellne
 
 ## Credits
 
-- Built as part of the [Code Institute](https://codeinstitute.net/) Full Stack Software Development course.
-- Images used: Provided by Code Institute resources and AI-generated via Microsoft Designer.
+- Built as part of the [Code Institute](https://codeinstitute.net/) Full Stack Software Development course
+- Images used: Provided by Code Institute resources and AI-generated via Microsoft Designer
 
 ## Acknowledgements
 
 Thanks to Code Institute mentors and walkthrough instructors for clear guidance and project structure.
 
 ---
+
